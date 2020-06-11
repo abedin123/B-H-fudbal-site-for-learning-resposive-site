@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repka</title>
+    <link rel="stylesheet" href="../CSS/maincss.css">
+    <link rel="stylesheet" href="../CSS/smcss.css">
+    <link rel="stylesheet" href="../CSS/repkasass.css">
+    <link rel="stylesheet" href="../CSS/mdcss.css">
+    <link rel="stylesheet" href="../CSS/lgcss.css">
+    <link rel="stylesheet" href="../CSS/xlcss.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="menu" class="container-fluid position-fixed min-vh-100 pl-0 pr-0 float-left sidebar">
+        <span id="iconx"class="text-white float-right font-weight-bold mt-3 mr-4 cursor-pointer" onclick="closeNav()">X</span>
+        <ul class="list-group w-100">
+            <li class="text-white rounded-0 pt-2 pb-2 pr-2 pl-3 linav cursor-pointer bord">Početna</li>
+            <li class="position-relative text-white rounded-0 pt-2 pb-2 pr-2 pl-3 linav cursor-pointer bord"data-toggle="collapse" href="#reprezentacija" role="button" aria-expanded="false" aria-controls="reprezentacija"><a>Reprezentacija</a><div class="verticalline position-absolute d-inline float-right"></div><span class="float-right plusicon font-weight-bold mr-1">+</span>
+                <div class="collapse" id="reprezentacija">
+                    <ul class="list-group w-100 list-unstyled p-0 mt-3">
+                        <li class="text-white rounded-0 pt-0 pb-2 pr-2 pl-0 linav cursor-pointer mb-2">- BHT Premijer liga BiH</li>
+                        <li class="text-white rounded-0 pt-0 pb-2 pr-2 pl-0 linav cursor-pointer mb-2">- Kup BiH</li>
+                        <li class="text-white rounded-0 pt-0 pb-2 pr-2 pl-0 linav cursor-pointer">- Ostala takmičenja u BiH</li>
+                        </ul>
+                  </div>
+            </li>
+            <li class="position-relative text-white rounded-0 pt-2 pb-2 pr-2 pl-3 linav cursor-pointer bord" data-toggle="collapse" href="#premijerliga" role="button" aria-expanded="false" aria-controls="premijerliga"><a>Premijer liga BiH i domaći fudbal</a><div class="verticalline position-absolute d-inline float-right"></div><span class="float-right plusicon font-weight-bold mr-1">+</span>
+                <div class="collapse" id="premijerliga">
+                    <ul class="list-group w-100 list-unstyled p-0 mt-3">
+                        <li class="text-white rounded-0 pt-0 pb-2 pr-2 pl-0 linav cursor-pointer mb-2">- BHT Premijer liga BiH</li>
+                        <li class="text-white rounded-0 pt-0 pb-2 pr-2 pl-0 linav cursor-pointer mb-2">- Kup BiH</li>
+                        <li class="text-white rounded-0 pt-0 pb-2 pr-2 pl-0 linav cursor-pointer">- Ostala takmičenja u BiH</li>
+                        </ul>
+                  </div>
+            </li>
+            <li class="text-white rounded-0 pt-2 pb-2 pl-3 linav cursor-pointer bord">Košarka</li>
+            <li class="text-white rounded-0 pt-2 pb-2 pl-3 linav cursor-pointer bord">Rukomet</li>
+            <li class="position-relative text-white rounded-0 pt-2 pb-2 pr-2 pl-3 linav cursor-pointer bord" data-toggle="collapse" href="#fanzona" role="button" aria-expanded="false" aria-controls="fanzona"><a>Fan zona</a><div class="verticalline position-absolute d-inline float-right"></div><span class="float-right plusicon font-weight-bold mr-1">+</span>
+                <div class="collapse" id="fanzona">
+                    <ul class="list-group w-100 list-unstyled p-0 mt-3">
+                        <li class="text-white rounded-0 pt-0 pb-2 pr-2 pl-0 linav cursor-pointer mb-2">- BHT Premijer liga BiH</li>
+                        <li class="text-white rounded-0 pt-0 pb-2 pr-2 pl-0 linav cursor-pointer mb-2">- Kup BiH</li>
+                        <li class="text-white rounded-0 pt-0 pb-2 pr-2 pl-0 linav cursor-pointer">- Ostala takmičenja u BiH</li>
+                        </ul>
+                  </div>
+            </li>
+            <li class="text-white rounded-0 pt-2 pb-2 pl-3 linav cursor-pointer bord">Ostali sportovi</li>
+            <li class="text-white rounded-0 pt-2 pb-2 pl-3 linav cursor-pointer bord">Ostali sportovi</li>
+            <li class="text-white rounded-0 pt-2 pb-2 pl-3 linav cursor-pointer bord">BIH shop</li>
+            <li class="text-white rounded-0 pt-2 pb-2 pl-3 linav cursor-pointer bord">BIH scout</li>
+        </ul>
+        <div class="input-group mt-4 pl-2 pr-1">
+            <input type="text" class="form-control rounded-0 border-0 pl-1" placeholder="upišite pojam i pritisnite 'enter'" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+    </div>
+<main id="main"class="position-relative bg-light">
+    <div id="navmenn" class="container p-0 bg-primary text-center m-0 col-12">
+            <div class="container p-0">
+                <ul class="list-inline m-0">
+                    <a class="cursor-pointer text-white" href=#><li class="d-inline">REPREZENTACIJA</li></a>
+                    <a class="cursor-pointer text-white ml-2" href=#><li class="d-inline">PREMIJER LIGA</li></a>
+                    <a class="cursor-pointer text-white ml-2" href=#><li class="d-inline">BIH SCOUT</li></a>
+                    <a class="cursor-pointer text-white ml-2" href=#><li class="d-inline">BIH SHOP</li></a>
+                    <a class="cursor-pointer text-white ml-2" href=#><li class="d-inline">REZULTATI</li></a>
+                </ul>
+            </div>
+    </div>
+    <nav class="navbar bg-primary pl-1 text-center text-md-left pr-md-0 pl-xl-5 pr-xl-5">
+        <div class="row m-0 col-md-12 p-0">
+            <div class="container p-0 m-0 col-md-11 col-11 col-lg-4">
+                <button class="navbar-toggler" onclick="openNav()">
+                    <span class="line mb-1 bg-white w-100 float-left"></span> 
+                    <span class="line mb-1 bg-white w-100 float-left"></span> 
+                    <span class="line mb-0 bg-white w-100 float-left"></span>
+                </button>
+                <div class="container p-0 w-auto text-center cursor-pointer ml-lg-0">
+                    <div class="container d-inline w-auto text-center p-0">
+                        <a id="xxx"class="bg-white text-primary rounded-left font-weight-bold naslovtext">reprezentacija</a><a class="bg-white text-primary ml-1 rounded-right font-weight-bold naslovtext">ba</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container p-0 col-md-1 text-md-right col-1 col-lg-8">
+                    <div id="navmenn1" class="container p-0 bg-primary text-md-right col-12 col-md-10 float-right mr-md-2">
+                        <div class="container p-0">
+                            <ul class="list-inline m-0 w-100">
+                                <a class="cursor-pointer text-white textulmd font-weight-bold atextmenu" href="#"><li class="d-inline litextmenu">REPREZENTACIJA</li></a>
+                                <a class="cursor-pointer text-white ml-2 textulmd font-weight-bold atextmenu" href=#><li class="d-inline litextmenu">PREMIJER LIGA</li></a>
+                                <a class="cursor-pointer text-white ml-2 textulmd font-weight-bold atextmenu" href=#><li class="d-inline litextmenu">BIH SCOUT</li></a>
+                                <a class="cursor-pointer text-white ml-2 textulmd font-weight-bold atextmenu" href=#><li class="d-inline litextmenu">BIH SHOP</li></a>
+                                <a class="cursor-pointer text-white ml-2 textulmd font-weight-bold atextmenu" href=#><li class="d-inline litextmenu">REZULTATI</li></a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="srcdiv" class="p-0 m-0 mr-lg-3 mr-xl-0">
+                        <i id="src"class="fa fa-fw fa-search text-white font-weight-bold"></i>
+                    </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container p-0 col-12 pl-xl-5 pr-xl-5 pt-5 pl-3 pr-3">
+        <div class="row m-0">
+                <div class="container col-12 position-relative p-0 col-lg-8 pr-lg-3 pb-2 pb-lg-0">
+                    <img src="https://media.reprezentacija.ba//2020/04/bojan-nasti%C4%87-bate-borisov-1-350x233.jpg" class="col-12 p-0 maindvijestislike h-100">
+                    <div class="container position-absolute col-12 p-0 pl-2 mainvijestidiv mb-2 pr-2 pl-sm-4 mb-sm-3">
+                        <div class="container-fluid pl-0 mb-1">
+                            <button class="btn-position-font bg-warning border-0 font-weight-bold rounded pl-2 pr-2 pt-1 pb-1">BHT PREMIJER LIGA BIH</button>
+                            <i class="fa fa-comments text-white ml-1"></i>
+                            <span class="text-white mb-2">0</span>
+                        </div>
+                        <h1 id="jedinivelikih1"class="text-divovi font-weight-bold text-white">Navijačima Čelika ovih dana je vrlo ssssssssssssssssssssssssssssssss mučno, na zvaničnim kanalima kluba iznosi se prljav veš</h1>
+                    </div>
+            </div>
+            <div class="col-lg-4 p-0">
+                <div class="row h-100 p-0">
+                    <div class="col-lg-12 h-100 pr-0 pl-0">
+                        <div class="row h-100 col-lg-12 m-0">
+                            <div class="container col-12 position-relative p-0 col-md-6 pr-md-3 col-lg-12 mt-lg-0 pr-lg-0 pl-lg-0 pb-lg-2 pt-2 pb-2 visineprvidiv pb-md-0 pt-lg-0">
+                            <img src="../SLIKE/prva2.jpg" class="col-12 h-100 p-0 maindvijestislike">
+                            <div class="container position-absolute p-0 pl-2 mainvijestidiv mb-2 pr-2 pl-sm-4 mb-sm-3 pl-md-2 col-md-11 pr-md-0">
+                                <div class="container-fluid pl-0 mb-1">
+                                    <button class="btn-position-font bg-warning border-0 font-weight-bold rounded pl-2 pr-2 pt-1 pb-1">BHT PREMIJER LIGA BIH</button>
+                                    <i class="fa fa-comments text-white ml-1"></i>
+                                    <span class="text-white mb-2">0</span>
+                                </div>
+                                <h1 class="text-divovi font-weight-bold text-white">Navijačianičnim kanalima kluba iznosi se prljav veš</h1>
+                            </div>
+                        </div>
+                        <div class="container p-0 col-12 col-md-6 pl-md-3 col-lg-12 pl-lg-0 mt-lg-0 pt-lg-2 mt-0 pt-2 visineprvidiv">
+                            <div id="fandiv" class="container col-12 text-center pb-2 pb-sm-5 pt-sm-3 pb-md-3 h-50 cursor-pointer pt-lg-2 pt-xl-4">
+                                <span class="brojke text-white">205.591</span>
+                                <span class="text-white d-block instafbtext">fanova nas prati na facebooku</span>
+                            </div>
+                            <div id="instadiv" class="container col-12 text-center pb-2 pb-sm-5 pt-sm-3 pb-md-3 h-50 cursor-pointer pt-lg-2 pt-xl-4">
+                                <span class="brojke text-white">205.591</span>
+                                <span class="text-white d-block instafbtext">fanova nas prati na facebooku</span>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid col-12 pt-4 pl-xl-5 pr-xl-5">
+        <div class="container-fluid position-relative p-0">
+            <span class="naslovi pl-2 pb-2 pr-2 mb-0">NAJNOVIJE VIJESTI</span>
+            <hr class="w-100 position-absolute linijenaslova">
+        </div>
+        <div class="container col-12 p-0 mt-4">
+        <div class="row m-0">
+            <div class="container col-12 position-relative p-0 col-md-6 pr-md-3 col-lg-4 cursor-pointer">
+                <img src="https://media.reprezentacija.ba//2020/04/bojan-nasti%C4%87-bate-borisov-1-350x233.jpg" class="col-12 p-0 maindvijestislike h-100">
+                <div class="container position-absolute p-0 pl-2 mainvijestidiv mb-2 pr-2 pl-sm-4 mb-sm-3 pl-md-2 pr-md-0 col-md-11">
+                    <div class="container-fluid pl-0 mb-1">
+                        <button class="btn-position-font bg-warning border-0 font-weight-bold rounded pl-2 pr-2 pt-1 pb-1">BHT PREMIJER LIGA BIH</button>
+                        <i class="fa fa-comments text-white ml-1"></i>
+                        <span class="text-white mb-2">0</span>
+                    </div>
+                    <h1 class="text-divovi font-weight-bold text-white">Navijačima Čelika ovih dana je vrlo ssssssssssssssssssssssssssssssss mučno, na zvaničnim kanalima kluba iznosi se prljav veš</h1>
+                </div>
+            </div> 
+            <div class="container col-12 position-relative p-0 mt-3 col-md-6 mt-md-0 pl-md-3 col-lg-4 pr-lg-3 cursor-pointer">
+                <img src="../SLIKE/prva2.jpg" class="col-12 p-0 maindvijestislike h-100">
+                <div class="container position-absolute p-0 pl-2 mainvijestidiv mb-2 pr-2 pl-sm-4 mb-sm-3 pl-md-2 col-md-11 pr-md-0">
+                    <div class="container-fluid pl-0 mb-1">
+                        <button class="btn-position-font bg-warning border-0 font-weight-bold rounded pl-2 pr-2 pt-1 pb-1">BHT PREMIJER LIGA BIH</button>
+                        <i class="fa fa-comments text-white ml-1"></i>
+                        <span class="text-white mb-2">0</span>
+                    </div>
+                    <h1 class="text-divovi font-weight-bold text-white">Navijačianičnim kanalima kluba iznosi se prljav veš</h1>
+                </div>
+            </div>
+            <div class="container col-12 position-relative p-0 mt-3 col-md-6 pr-md-3 col-lg-4 pl-lg-3 mt-lg-0 pr-lg-0 cursor-pointer">
+                <img src="../SLIKE/prva2.jpg" class="col-12 p-0 maindvijestislike h-100">
+                <div class="container position-absolute p-0 pl-2 mainvijestidiv mb-2 pr-2 pl-sm-4 mb-sm-3 pl-md-2 col-md-11 pr-md-0">
+                    <div class="container-fluid pl-0 mb-1">
+                        <button class="btn-position-font bg-warning border-0 font-weight-bold rounded pl-2 pr-2 pt-1 pb-1">BHT PREMIJER LIGA BIH</button>
+                        <i class="fa fa-comments text-white ml-1"></i>
+                        <span class="text-white mb-2">0</span>
+                    </div>
+                    <h1 class="text-divovi font-weight-bold text-white">Navijačianičnim kanalima kluba iznosi se prljav veš</h1>
+                </div>
+            </div>
+            <div class="container col-12 position-relative p-0 mt-3 col-md-6 pl-md-3 col-lg-4 pl-lg-0 pr-lg-3 cursor-pointer">
+                <img src="../SLIKE/prva2.jpg" class="col-12 p-0 maindvijestislike h-100">
+                <div class="container position-absolute p-0 pl-2 mainvijestidiv mb-2 pr-2 pl-sm-4 mb-sm-3 pl-md-2 col-md-11 pr-md-0">
+                    <div class="container-fluid pl-0 mb-1">
+                        <button class="btn-position-font bg-warning border-0 font-weight-bold rounded pl-2 pr-2 pt-1 pb-1">BHT PREMIJER LIGA BIH</button>
+                        <i class="fa fa-comments text-white ml-1"></i>
+                        <span class="text-white mb-2">0</span>
+                    </div>
+                    <h1 class="text-divovi font-weight-bold text-white">Navijačianičnim kanalima kluba iznosi se prljav veš</h1>
+                </div>
+            </div>
+            <div class="container col-12 position-relative p-0 mt-3 col-md-6 pr-md-3 col-lg-4 pl-lg-3 cursor-pointer">
+                <img src="../SLIKE/prva2.jpg" class="col-12 p-0 maindvijestislike h-100">
+                <div class="container position-absolute p-0 pl-2 mainvijestidiv mb-2 pr-2 pl-sm-4 mb-sm-3 pl-md-2 col-md-11 pr-md-3">
+                    <div class="container-fluid pl-0 mb-1">
+                        <button class="btn-position-font bg-warning border-0 font-weight-bold rounded pl-2 pr-2 pt-1 pb-1">BHT PREMIJER LIGA BIH</button>
+                        <i class="fa fa-comments text-white ml-1"></i>
+                        <span class="text-white mb-2">0</span>
+                    </div>
+                    <h1 class="text-divovi font-weight-bold text-white">Navijačianičnim kanalima kluba iznosi se prljav veš</h1>
+                </div>
+            </div>
+            <div class="container col-12 position-relative p-0 mt-3 col-md-6 pl-md-3 col-lg-4 cursor-pointer">
+                <img src="../SLIKE/prva2.jpg" class="col-12 p-0 maindvijestislike h-100">
+                <div class="container position-absolute p-0 pl-2 mainvijestidiv mb-2 pr-2 pl-sm-4 mb-sm-3 pl-md-2 col-md-11 pr-md-0">
+                    <div class="container-fluid pl-0 mb-1">
+                        <button class="btn-position-font bg-warning border-0 font-weight-bold rounded pl-2 pr-2 pt-1 pb-1">BHT PREMIJER LIGA BIH</button>
+                        <i class="fa fa-comments text-white ml-1"></i>
+                        <span class="text-white mb-2">0</span>
+                    </div>
+                    <h1 class="text-divovi font-weight-bold text-white">Navijačianičnim kanalima kluba iznosi se prljav veš</h1>
+                </div>
+            </div>
+            <div class="container col-12 position-relative p-0 mt-3 col-md-6 pr-md-3 col-lg-4 cursor-pointer">
+                <img src="../SLIKE/prva2.jpg" class="col-12 p-0 maindvijestislike h-100">
+                <div class="container position-absolute p-0 pl-2 mainvijestidiv mb-2 pr-2 pl-sm-4 mb-sm-3 pl-md-2 col-md-11 pr-md-0">
+                    <div class="container-fluid pl-0 mb-1">
+                        <button class="btn-position-font bg-warning border-0 font-weight-bold rounded pl-2 pr-2 pt-1 pb-1">BHT PREMIJER LIGA BIH</button>
+                        <i class="fa fa-comments text-white ml-1"></i>
+                        <span class="text-white mb-2">0</span>
+                    </div>
+                    <h1 class="text-divovi font-weight-bold text-white">Navijačianičnim kanalima kluba iznosi se prljav veš</h1>
+                </div>
+            </div>
+            <div class="container col-12 position-relative p-0 mt-3 col-md-6 pl-md-3 col-lg-4 pr-lg-3 cursor-pointer">
+                <img src="../SLIKE/prva2.jpg" class="col-12 p-0 maindvijestislike h-100">
+                <div class="container position-absolute p-0 pl-2 mainvijestidiv mb-2 pr-2 pl-sm-4 mb-sm-3 pl-md-2 col-md-11 pr-md-3">
+                    <div class="container-fluid pl-0 mb-1">
+                        <button class="btn-position-font bg-warning border-0 font-weight-bold rounded pl-2 pr-2 pt-1 pb-1">BHT PREMIJER LIGA BIH</button>
+                        <i class="fa fa-comments text-white ml-1"></i>
+                        <span class="text-white mb-2">0</span>
+                    </div>
+                    <h1 class="text-divovi font-weight-bold text-white">Navijačianičnim kanalima kluba iznosi se prljav veš</h1>
+                </div>
+            </div>
+            <div class="container col-12 position-relative p-0 mt-3 col-md-6 pr-md-3 col-lg-4 pl-lg-3 pr-lg-0 cursor-pointer">
+                <img src="../SLIKE/prva2.jpg" class="col-12 p-0 maindvijestislike h-100">
+                <div class="container position-absolute p-0 pl-2 mainvijestidiv mb-2 pr-2 pl-sm-4 mb-sm-3 pl-md-2 col-md-11 pr-md-0">
+                    <div class="container-fluid pl-0 mb-1">
+                        <button class="btn-position-font bg-warning border-0 font-weight-bold rounded pl-2 pr-2 pt-1 pb-1">BHT PREMIJER LIGA BIH</button>
+                        <i class="fa fa-comments text-white ml-1"></i>
+                        <span class="text-white mb-2">0</span>
+                    </div>
+                    <h1 class="text-divovi font-weight-bold text-white">Navijačianičnim kanalima kluba iznosi se prljav veš</h1>
+                </div>
+            </div>
+            <div class="container col-12 position-relative p-0 mt-3 col-md-6 pl-md-3 col-lg-4 pr-lg-3 cursor-pointer">
+                <img src="../SLIKE/prva2.jpg" class="col-12 p-0 maindvijestislike h-100">
+                <div class="container position-absolute p-0 pl-2 mainvijestidiv mb-2 pr-2 pl-sm-4 mb-sm-3 pl-md-2 col-md-11 pr-md-3">
+                    <div class="container-fluid pl-0 mb-1">
+                        <button class="btn-position-font bg-warning border-0 font-weight-bold rounded pl-2 pr-2 pt-1 pb-1">BHT PREMIJER LIGA BIH</button>
+                        <i class="fa fa-comments text-white ml-1"></i>
+                        <span class="text-white mb-2">0</span>
+                    </div>
+                    <h1 class="text-divovi font-weight-bold text-white">Navijačianičnim kanalima kluba iznosi se prljav veš</h1>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="container-fluid col-12 pt-4 pl-xl-5 pr-xl-5">
+        <div class="container-fluid position-relative p-0 text-center">
+            <span class="naslovi pl-0 pb-2 pr-0 mb-0 d-block text-sm-left pl-sm-3 pl-md-0">POSJETITE NASU ONLINE PRODAVNICU</span>
+            <i class="fas fa-angle-double-right position-relative strelicaprodaje text-primary"></i>
+            <hr class="position-absolute w-100 linijenaslova">
+            <div class="container col-12 p-0 mt-4">
+                <div class="row m-0">
+                    <div class="col-6 pl-0 pr-3 col-sm-3 col-lg-2 cursor-pointer">
+                        <div class="container p-0 position-relative border border-white prodavnicadiv">
+                            <img src="https://shop.reprezentacija.ba/wp-content/uploads/2019/05/bosell-casual-bh-brand-stecak-majica-1.jpg" class="w-100 h-auto prodavnicaslike">
+                            <span class="position-absolute cijena bg-warning text-primary p-2">9.99€</span>
+                        </div>
+                    </div>
+                    <div class="col-6 pl-3 pr-0 col-sm-3 pr-sm-3 col-lg-2 cursor-pointer">
+                        <div class="container p-0 position-relative border border-white prodavnicadiv">
+                            <img src="https://shop.reprezentacija.ba/wp-content/uploads/2018/08/svecana-zastavica.jpg" class="w-100 h-auto prodavnicaslike">
+                            <span class="position-absolute cijena bg-warning text-primary p-2">9.99€</span>
+                        </div>
+                    </div>
+                    <div class="col-6 pl-0 pr-3 col-sm-3 pl-sm-3 col-lg-2 cursor-pointer">
+                        <div class="container p-0 position-relative border border-white prodavnicadiv">
+                            <img src="https://shop.reprezentacija.ba/wp-content/uploads/2018/08/bosell-casual-bh-brand-model-bih-dnk-1.jpg" class="w-100 h-auto prodavnicaslike">
+                            <span class="position-absolute cijena bg-warning text-primary p-2">9.99€</span>
+                        </div>
+                    </div>
+                    <div class="col-6 pl-3 pr-0 col-sm-3 col-lg-2 pr-lg-3 cursor-pointer">
+                        <div class="container p-0 position-relative border border-white prodavnicadiv">
+                            <img src="https://shop.reprezentacija.ba/wp-content/uploads/2017/03/zastava-bih-1.jpg" class="w-100 h-auto prodavnicaslike">
+                            <span class="position-absolute cijena bg-warning text-primary p-2">9.99€</span>
+                        </div>
+                    </div>
+                    <div class="col-6 p-0 col-sm-3 col-lg-2 pr-lg-3 pl-lg-3 cursor-pointer pr-3">
+                        <div class="container p-0 position-relative border border-white prodavnicadiv">
+                            <img src="https://shop.reprezentacija.ba/wp-content/uploads/2017/03/zastava-bih-1.jpg" class="w-100 h-auto prodavnicaslike">
+                            <span class="position-absolute cijena bg-warning text-primary p-2">9.99€</span>
+                        </div>
+                    </div>
+                    <div class="col-6 p-0 col-sm-3 col-lg-2 pr-lg-3 pl-lg-3 cursor-pointer pl-3">
+                        <div class="container p-0 position-relative border border-white prodavnicadiv">
+                            <img src="https://shop.reprezentacija.ba/wp-content/uploads/2017/03/zastava-bih-1.jpg" class="w-100 h-auto prodavnicaslike">
+                            <span class="position-absolute cijena bg-warning text-primary p-2">9.99€</span>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid col-12 pt-5 pl-xl-5 pr-xl-5">
+        <div class="container-fluid position-relative p-0 ">
+            <span class="naslovi pl-0 pb-2 pr-0 mb-0">FAN ZONA</span>
+            <hr class="position-absolute w-100 linijenaslova">
+            <div class="container col-12 p-0 mt-4">
+                <div class="row m-0">
+                   <div class="col-12 p-0 position-relative slikefanzone col-lg-4 pr-lg-3">
+                        <img src="https://reprezentacija.ba/idealnih-bh-11/images/bg-06.jpg" class="h-100 w-100">
+                        <div id="idealnih11" class="container p-0 position-absolute col-12">
+                            <div class="container p-0 text-center">
+                                <img id="prvidres"src="https://reprezentacija.ba/idealnih-bh-11/dresovi/plavi.png " class="position-relative cursor-pointer">
+                                <img id="drugidres"src="https://reprezentacija.ba/idealnih-bh-11/dresovi/bijeli.png" class="position-relative cursor-pointer">
+                            </div>
+                            <div class="container p-0 text-center">
+                                <button class="btn btn-primary">IDEALNIH BH 11</button>
+                            </div>
+                        </div>
+                   </div>
+                   <div id="rasporeddivf"class="container p-0 col-12 col-lg-4 pl-lg-3 pr-lg-3 h-100 cursor-pointer">
+                   <div class="prognozeirez container col-12 pt-3 mt-3 text-center pl-3 pr-3 pb-4 mt-lg-0 pr-lg-3 pl-lg-3 pb-lg-3 pt-lg-2">
+                        <span class="text-white ostalinaslovi">LIGA NACIJA / PROGNOZE I REZULTATI</span>
+                        <div id="rasporeddiv"class="container pt-2 pb-2 col-md-12" >
+                            <div class="container p-0 text-center rounded prognozedivovi pt-1 pb-1 col-12">
+                                <img src="http://static.weltsport.net/gfx/emblem/xs/1363.gif" class="float-left ml-4">
+                                <span class="pl-4 pr-4 pt-0 pb-0 bg-white border border-dark pl-sm-5 pr-sm-5">-</span>
+                                <img src="http://static.weltsport.net/gfx/emblem/xs/13947.gif" class="float-right mr-4 ">
+                            </div>
+                            <div class="container p-0 text-center rounded prognozedivovi pt-1 pb-1 mt-2 col-12">
+                                <img src="http://static.weltsport.net/gfx/emblem/xs/1363.gif" class="float-left ml-4">
+                                <span class="pl-4 pr-4 pt-0 pb-0 bg-white border border-dark pl-sm-5 pr-sm-5">-</span>
+                                <img src="http://static.weltsport.net/gfx/emblem/xs/13947.gif" class="float-right mr-4 ">
+                            </div>
+                            <div class="container p-0 text-center rounded prognozedivovi pt-1 pb-1 mt-2 col-12">
+                                <img src="http://static.weltsport.net/gfx/emblem/xs/1363.gif" class="float-left ml-4">
+                                <span class="pl-4 pr-4 pt-0 pb-0 bg-white border border-dark pl-sm-5 pr-sm-5">-</span>
+                                <img src="http://static.weltsport.net/gfx/emblem/xs/13947.gif" class="float-right mr-4 ">
+                            </div>
+                            <div class="container p-0 text-center rounded prognozedivovi pt-1 pb-1 mt-2 col-12">
+                                <img src="http://static.weltsport.net/gfx/emblem/xs/1363.gif" class="float-left ml-4">
+                                <span class="pl-4 pr-4 pt-0 pb-0 bg-white border border-dark pl-sm-5 pr-sm-5">-</span>
+                                <img src="http://static.weltsport.net/gfx/emblem/xs/13947.gif" class="float-right mr-4 ">
+                            </div>
+                        </div>
+                        <div class="container p-0 text-center col-md-12 pl-md-0 pr-md-0">
+                            <button id="rasporedbtn"class="btn btn-primary pt-1 pb-1 mt-2 w-100 ostalinaslovi pt-xl-0 pb-xl-0">REZULTATI I RASPORED</button>
+                        </div>
+                   </div>
+                </div>
+                   <div class="container p-0 col-lg-4 pl-lg-3 col-sm-12">
+                       <div class="prognozeirez container col-12 pt-3 mt-3 pl-0 pr-0 pb-2 mt-lg-0 pb-lg-0">
+                    <div class="container p-0 col-md-12">
+                        <div class="row m-0">
+                            <div class="bg-primary col-6 pb-1 text-center text-md-right pb-lg-1 pl-0 pr-0 pr-md-3">
+                                <span class="malinaslovi text-white font-weight-bold">NAREDNA UTAKMICA</span>
+                            </div>
+                            <div class="col-6 pr-4">
+                                <p class="text-white malinaslovi font-weight-bold text-left mt-1 mb-lg-0">26.03.2020. u 20:45</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container p-0 text-center mt-4 mt-lg-1">
+                        <p class="text-white ostalinaslovi font-weight-bold mt-1">Baraž za Euro 2020</p>
+                    </div>
+                    <div class="container p-0">
+                        <div class="row m-0">
+                            <div class="container p-0 col-6 text-center"> 
+                                <img src="https://www.uefa.com/imgml/flags/700x700/BIH.png" class="slikenarutakmica">
+                                <p class="text-white mb-lg-0">BIH</p>
+                            </div>
+                            <div class="container p-0 col-6 text-center">
+                                <img src="https://www.uefa.com/imgml/flags/700x700/NIR.png" class="slikenarutakmica">
+                                <p class="text-white mb-lg-0">NIR</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center text-white">Zenica</p>
+               </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid col-12 pt-5 pl-xl-5 pr-xl-5">
+        <div class="container-fluid position-relative p-0 ">
+            <span class="naslovi pl-0 pb-2 pr-0 mb-0">NAJČITANIJE</span>
+            <hr class="position-absolute w-100 linijenaslova">
+            </div>
+            <div id="carouselvelikaverzija"class="container p-0 mt-4">
+                <div class="row m-0">
+                    <a href="#" class="col-lg-2 text-center">
+                        <img class="w-100 slikenajcitanije"src="https://media.reprezentacija.ba/2019/10/fkzeljeznicar-150x150.png" alt="First slide" >
+                        <span class="text-dark" style="text-decoration: none;">FK Zeljeznicar</span>
+                      </a>
+                      <a href="#" class="col-lg-2 text-center">
+                          <img  class="w-100 slikenajcitanije"src="https://media.reprezentacija.ba/2019/10/fksarajevo-150x150.png" alt="First slide">
+                          <span class="text-dark">FK Sarajevo</span>
+                      </a>
+                      <a href="#" class="col-lg-2 text-center">
+                        <img class="w-100 slikenajcitanije" src="https://media.reprezentacija.ba/2019/10/Edin-Dzeko-150x150.png" alt="First slide" style="height: 150px;">
+                        <span class="text-dark">Edin Džeko</span>
+                    </a>
+                    <a href="#" class="col-lg-2 text-center">
+                        <img class="w-100 slikenajcitanije" src="https://media.reprezentacija.ba/2019/10/Miralem-Pjanic-150x150.png" alt="First slide" style="height: 150px;">
+                        <span class="text-dark">Miralem Pjanić</span>
+                    </a>
+                    <a href="#" class="col-lg-2 text-center">
+                        <img class="w-100 slikenajcitanije" src="https://media.reprezentacija.ba//2017/10/fs-bih.png" alt="First slide" style="height: 150px;">
+                        <span class="text-dark">Zmajevi</span>
+                    </a>
+                    <a href="#" class="col-lg-2 text-center">
+                        <img class="w-100 slikenajcitanije" src="https://media.reprezentacija.ba/2019/10/hskzrinjskimostar-150x150.png" alt="First slide" style="height: 150px;">
+                        <span class="text-dark">HŠK Zrinjski</span>
+                    </a>
+                    
+                </div>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide mt-5" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <div class="row m-0">
+                          <a href="#" class="col-6">
+                              <img class="w-100 slikenajcitanije"src="https://media.reprezentacija.ba/2019/10/fkzeljeznicar-150x150.png" alt="First slide" >
+                            </a>
+                            <a href="#" class="col-6">
+                                <img  class="w-100 slikenajcitanije"src="https://media.reprezentacija.ba/2019/10/fksarajevo-150x150.png" alt="First slide">
+                            </a>
+                        </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row m-0">
+                        <a href="#" class="col-6">
+                            <img class="w-100 slikenajcitanije" src="https://media.reprezentacija.ba/2019/10/Edin-Dzeko-150x150.png" alt="First slide" style="height: 150px;">
+                        </a>
+                        <a href="#" class="col-6">
+                            <img class="w-100 slikenajcitanije" src="https://media.reprezentacija.ba/2019/10/Miralem-Pjanic-150x150.png" alt="First slide" style="height: 150px;">
+                        </a>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row m-0">
+                        <a href="#" class="col-6">
+                            <img class="w-100 slikenajcitanije" src="https://media.reprezentacija.ba//2017/10/fs-bih.png" alt="First slide" style="height: 150px;">
+                        </a>
+                        <a href="#" class="col-6">
+                            <img class="w-100 slikenajcitanije" src="https://media.reprezentacija.ba/2019/10/hskzrinjskimostar-150x150.png" alt="First slide" style="height: 150px;">
+                        </a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="mt-5 mt-lg-3">
+              <div id="reklame"class="container-fluid pl-4 pr-4 pt-4 pb-4 pl-sm-5 pr-sm-5">
+                  <div class="row m-0">
+                      <div class="container p-1 col-6 col-sm-3">
+                          <div class="container col-12 rounded p-0 border">
+                              <a href="#" class="col-12 p-0">
+                                  <img class="w-100 slikekladionica " src="https://media.reprezentacija.ba//2019/10/meridian-bet-logo.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="container p-1 col-6 col-sm-3">
+                            <div class="container col-12 rounded p-0 border">
+                                <a href="#" class="col-12 p-0">
+                                    <img class="w-100 slikekladionica rounded" src="https://media.reprezentacija.ba//2015/06/Logo-Disk-doo1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="container p-1 col-6 col-sm-3">
+                            <div class="container col-12 rounded p-0 border">
+                                <a href="#" class="col-12 p-0">
+                                    <img class="w-100 slikekladionica h-100" src="https://media.reprezentacija.ba//2015/10/Kladionica-Lutrije-BiH-1.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="container p-1 col-6 col-sm-3">
+                            <div class="container col-12 rounded p-0 border">
+                                <a href="#" class="col-12 p-0">
+                                    <img class="w-100 slikekladionica" src="https://media.reprezentacija.ba//2019/06/logo.jpg">
+                                </a>
+                            </div>
+                        </div>
+                  </div>
+              </div>
+            </div>
+    <div id="foot" class="container-fluid col-12 pt-4 pb-4 text-center">
+            <div class="container p-0 text-center">
+                <a href="#" class="p-0 col-12">
+                    <img id="logofoot" src="https://reprezentacija.ba/wp-content/themes/webID_repka_v3/images/footer_logo.png">
+                </a>
+            </div>
+            <div class="container p-0 mt-4">
+                <a href="#" class="mr-1">
+                    <i class="fa fa-facebook text-white p-2 border rounded-circle"></i>
+                </a>
+                <a href="#" class="ml-1 mr-1">
+                    <i class="fa fa-twitter text-white p-2 border rounded-circle"></i>
+                </a>
+                <a href="#" class="ml-1 mr-1">
+                    <i class="fa fa-instagram text-white p-2 border rounded-circle"></i>
+                </a>
+                <div class="d-inline ml-1 mr-1"id="horline"></div>
+                <a href="#" class="ml-1 mr-1">
+                    <i class="fa fa-android text-white p-2 border rounded-circle"></i>
+                </a>
+                <a href="#" class="ml-1 mr-1">
+                    <i class="fa fa-apple text-white p-2 border rounded-circle"></i>
+                </a>
+                <a href="#" class="ml-1 mr-1">
+                    <i class="fa fa-windows text-white p-2 border rounded-circle"></i>
+                </a>
+            </div>
+            
+            <div id="hrfoot"class="container pr-0 pl-2 mt-3 mb-3 pt-3 pb-3">
+                <a href="#">
+                    <span class="textfoot ostalinaslovi font-weight-bold">Početna</span>
+                    <span class="textfoot ml-2 ostalinaslovi font-weight-bold">Marketing</span>
+                    <span class="textfoot ml-2 ostalinaslovi font-weight-bold">Kontakt</span>
+                    <br id="brfoot">
+                    <span id="privacpol" class="textfoot ostalinaslovi font-weight-bold">Privacy Policy</span>
+                </a>
+            </div>
+            
+            <div class="container p-0">
+                <span class="text-white text-prava">Sva prava pridržana © 2020. | Dizajn i programiranje </span>
+                <a class="p-0"><span class="textfoot text-prava">HDD.ba</span></a>
+            </div>
+        </div>  
+</main>
+
+</body>
+<script>
+    function openNav() {
+      document.getElementById("menu").style.width = "320px";
+      document.getElementById("main").style.marginLeft = "320px";
+    }
+    
+    function closeNav() {
+      document.getElementById("menu").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+       
+</html>

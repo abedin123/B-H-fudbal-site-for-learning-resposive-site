@@ -1,0 +1,54 @@
+@media only screen and (min-width: 992px) {
+    .instafbtext{
+        font-size:21px;
+    }
+    .brojke{
+        font-size:35px;
+    }
+    #carouselExampleIndicators{
+        display: none;
+    }
+    #carouselvelikaverzija{
+        display: block;
+    }
+    #rasporeddiv:hover{
+        background-color: red;
+        transition: all 0.8s ease 0s;
+    }
+    #rasporedbtn:hover{
+        background-color: red;
+        transition: all 0.8s ease 0s;
+    }
+    .prodavnicadiv:hover{
+        opacity: .5;
+        border: 2px solid blue;
+        transition: all 0.8s ease 0s;
+    }
+    #prvidres:hover{
+        bottom:10px;
+    }
+    #drugidres:hover{
+        bottom:10px;
+    }
+    .slikekladionica:hover{
+        opacity: 1;
+        box-shadow: 2px 2px 2px 2px #888888;
+        transition: all 1.5s ease 0s;
+    } 
+    .atextmenu:hover{
+        text-decoration: none;
+    }
+    .litextmenu:hover{
+        color:blue;
+        transition: color 0.8s ease 0s;
+    }
+    #navmenn{
+        display: none;
+    }
+    #navmenn1{
+        display: inline;
+    }
+    .visineprvidiv{
+        height: 50%;
+    }
+  } 

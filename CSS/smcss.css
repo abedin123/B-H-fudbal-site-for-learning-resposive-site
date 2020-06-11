@@ -1,0 +1,15 @@
+@media only screen and (min-width: 600px) {
+    .strelicaprodaje{ 
+        left:300px;
+        top:-32px;
+    }
+    .brojke{
+        font-size: 45px;
+    }
+    .instafbtext{
+        font-size:22px;
+    }
+    #logofoot{
+        width: auto;
+    }
+  }

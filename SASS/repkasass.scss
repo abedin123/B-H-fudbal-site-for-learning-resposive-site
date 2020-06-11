@@ -1,0 +1,57 @@
+$visinalinijetogglera: 3px;
+
+$visinanavbartogglera: 34px;
+
+$sirinanavbartogglera: 47px;
+
+$velicinapaddinganaslova: 2px;
+
+$fontsizeicona: 23px;
+
+$fontfamilyzasavtext: 'Asap Condensed', serif !important;
+
+$fontzasavtext:17px;
+$fontzabutton: 13px;
+.navbar-toggler{
+    width: $sirinanavbartogglera;
+    height: $visinanavbartogglera;
+}
+
+.navbar-toggler .line{
+    height: $visinalinijetogglera;
+}
+.padd{
+    padding:$velicinapaddinganaslova;
+    padding-top:0px;
+}
+
+#iconx, .plusicon{
+    font-size:$fontsizeicona;
+}
+.linav,.text-divovi{
+    font-size:$fontzasavtext;
+}
+.btn-position-font{
+    font-size:$fontzabutton;
+}
+.naslovi,.linav,.text-divovi{
+    font-family: $fontfamilyzasavtext;
+}
+@media only screen and (min-width: 580px) {
+    .text-divovi{
+        font-size:30px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .text-divovi{
+        font-size:20px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .text-divovi{
+        font-size:$fontzasavtext;
+    }
+    .btn-position-font{
+        font-size: 11px;
+    }
+}

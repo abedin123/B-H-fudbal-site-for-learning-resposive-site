@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#menu{
+    background-color: #1c1c1c;
+    width: 0;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.plusicon{
+    line-height: 20px;
+}
+.verticalline{
+    border-left:1px solid #555;
+    padding-bottom: 35px;
+    top:0;
+    right:36px;
+}
+.bord{
+    border-bottom: 1px solid #555;
+}
+.linav:hover{
+    background-color: black;
+}
+.sidebar {
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+#main {
+    overflow-x: hidden;
+    transition: margin-left .5s;
+  }
+  .mainvijestidiv{
+      bottom:0;
+  }
+  .maindvijestislike{
+      height: auto;
+  }
+#fandiv{
+    background-color: #0063a6;
+}
+#instadiv{
+    background-color: #1da1f2;
+}
+.instafbtext{
+    font-size:18px;
+}
+.brojke{
+    font-size:40px;
+}
+.naslovi{
+    font-size:15px;
+    border-bottom: 1px solid #1e88e5;
+}
+.linijenaslova{
+    top:14px;
+    left:0;
+}
+.strelicaprodaje{
+    left:130px;
+    top:10px;
+}
+.prodavnicaslike{
+    height: 120px;
+}
+.cijena{
+    bottom: 0;
+    right: 0;
+}
+.slikefanzone{
+    height: 250px;
+}
+#idealnih11{
+    top:80px;
+}
+.prognozeirez{
+    background-image: url('https://reprezentacija.ba/wp-content/themes/webID_repka_v3/images/LN-2018a.jpg');
+}
+.prognozedivovi{
+    background-color: #f2f2f2;
+}
+.ostalinaslovi{
+    font-size:14px;
+}
+.malinaslovi{
+    font-size:12px;
+    line-height: 150%;
+}
+.slikenarutakmica{
+    height: 120px;
+    width: 120px;
+}
+.slikenajcitanije{
+    height: 150px;
+}
+.slikekladionica{
+    opacity: .5;
+    border: 5px solid white;
+}
+.slikekladionica:hover{
+    opacity: 1;
+    box-shadow: 5px 5px 5px 5px #888888;
+    transition: all 0.8s ease 0s;
+} 
+#foot{
+    border-top: 5px solid #1e88e5;
+    background-color: #1c1c1c;
+}
+#horline{
+    border-left: 2px solid white;
+    height: 10px;
+}
+.textfoot{
+    color:#1e88e5;
+}
+#hrfoot{
+    border-top: 1px solid #505050;
+    border-bottom: 1px solid #505050;
+}
+.text-prava{
+    font-size:10px;
+}
+#hrfoot{
+    text-align: left;;
+}
+#srcdiv{
+    display: none;
+}
+#logofoot{
+    width: 100%;
+}
+@media only screen and (min-width: 380px) {
+    .naslovtext{
+        font-size:22px;
+        padding-left:5px;
+        padding-right:5px;
+    }
+    #brfoot{
+        display: none;
+    }
+    #hrfoot{
+        text-align: center;
+    }
+    #privacpol{
+        margin-left:10px;
+    }
+    #srcdiv{
+        display: inline;
+    }
+    #src{
+        font-size:23px;
+    }
+    #logofoot{
+        width: auto;
+    }
+}
+#navmenn1{
+    display: none;
+}
+#carouselvelikaverzija{
+    display: none;
+}
+span:hover{
+    text-decoration: none;
+}
+#rasporeddiv{
+    background-color: blue;
+}
+#navmenn{
+    display: none;
+}
+@media only screen and (min-width: 580px) {
+    #navmenn{
+        display: block;
+    }
+}
